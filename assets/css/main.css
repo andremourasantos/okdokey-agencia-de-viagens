@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+:root {
+  /*FONTS*/
+  --font-paragraph: 'Red Hat Display', sans-serif;
+  --font-title: 'Lobster', serif;
+
+  /*COLORS*/
+  --color-bckg: #FFFFFF;
+  --color-accent: hsl(76, 100%, 50%);
+  --color-accent_darker: hsl(76, 100%, 47%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-paragraph);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-title);
+}
+
+svg.ph-icon-btn {
+  cursor: pointer;
+}
