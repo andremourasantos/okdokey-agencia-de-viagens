@@ -1,5 +1,7 @@
 <template>
-  <button>
+  <button :class="{
+    secondary: buttonType === 'Secondary'
+  }">
     {{ buttonText }}
   </button>
 </template>
@@ -13,6 +15,11 @@ export default defineComponent({
     buttonText: {
       required: true,
       type: String,
+    },
+    buttonType: {
+      required: false,
+      type: String as () => 'Primary' | 'Secondary',
+      default: 'Primary'
     }
   },
   setup () {
@@ -38,7 +45,11 @@ export default defineComponent({
     transition: 250ms;
   }
 
-  button:hover, button:focus {
+  button.secondary {
+    background-color: white;
+  }
+
+  button:hover {
     background-color: var(--color-accent_darker);
   }
 

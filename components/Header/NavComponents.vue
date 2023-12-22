@@ -41,8 +41,8 @@ export default defineComponent({
     transition: 100ms;
   }
 
-  nav a:hover, nav a:focus {
-    font-weight: bold;
+  nav a:hover {
+    text-decoration: underline;
   }
 
   .show-mobile-tablet {

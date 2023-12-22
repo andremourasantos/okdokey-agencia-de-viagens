@@ -18,10 +18,20 @@
   font-family: var(--font-paragraph);
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-title);
 }
 
 svg.ph-icon-btn {
   cursor: pointer;
+  transition: 250ms;
+}
+
+svg.ph-icon-btn:active {
+  transform: scale(0.95);
 }
