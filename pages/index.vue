@@ -1,5 +1,6 @@
 <template>
   <Header/>
+
   <section class="hero-section">
     <article>
       <div>
@@ -14,6 +15,13 @@
     <article>
       <HeroVideo/>
     </article>
+  </section>
+
+  <section id="scorecards">
+    <Scorecards :scorecard-image="'shaking'" :scorecard-title="'+15 mil seguidores'" :scorecard-text="'Anseiam por participar nos rolês!'" />
+    <Scorecards :scorecard-image="'passion'" :scorecard-title="'+5 mil pessoas'" :scorecard-text="'Já experienciaram como é viver a vida!'" />
+    <Scorecards :scorecard-image="'confetti'" :scorecard-title="'+100 rolês'" :scorecard-text="'Relizados, de todos os tipos e gostos!'" />
+    <Scorecards :scorecard-image="'airport'" :scorecard-title="'+5 países'" :scorecard-text="'Não se limite, viva o quanto for necessário!'" />
   </section>
 </template>
 
@@ -61,6 +69,7 @@ export default defineComponent({
 
   .hero-section h1 {
     font-size: 52px;
+    margin-bottom: 8px;
   }
 
   .hero-section article:nth-of-type(1) {
@@ -84,12 +93,19 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
+    width: 100%;
   }
 
   .hero-section-btns .show-mobile {
     display: none;
+  }
+
+  @media screen and (max-height: 768px) and (max-width: 768px) {
+    .hero-section {
+      height: fit-content !important;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -109,6 +125,10 @@ export default defineComponent({
     .hero-section article:nth-of-type(2) {
       grid-row: 1;
     }
+
+    .hero-section-btns {
+      align-items: center;
+    }
   }
 
   @media screen and (max-width: 425px) {
@@ -123,6 +143,21 @@ export default defineComponent({
 
     .hero-section-btns .show-mobile {
       display: block;
+    }
+  }
+
+  #scorecards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #scorecards {
+      height: fit-content;
+      flex-wrap: wrap;
     }
   }
 </style>
