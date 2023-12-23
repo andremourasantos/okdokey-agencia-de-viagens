@@ -4,6 +4,8 @@
   /*FONTS*/
   --font-paragraph: 'Red Hat Display', sans-serif;
   --font-title: 'Lobster', serif;
+  --font-paragraph-color: #4a4a4a;
+  --font-title-color: #333333;
 
   /*COLORS*/
   --color-bckg: #FFFFFF;
@@ -21,10 +23,16 @@
 body {
   max-width: 1440px;
   margin: auto;
+  color: var(--font-paragraph-color);
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-title);
+  color: var(--font-title-color);
+}
+
+a {
+  color: inherit;
 }
 
 svg.ph-icon-btn {

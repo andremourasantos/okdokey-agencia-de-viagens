@@ -23,6 +23,8 @@
     <Scorecards :scorecard-image="'confetti'" :scorecard-title="'+100 rolês'" :scorecard-text="'Relizados, de todos os tipos e gostos!'" />
     <Scorecards :scorecard-image="'airport'" :scorecard-title="'+5 países'" :scorecard-text="'Não se limite, viva o quanto for necessário!'" />
   </section>
+
+  <Footer/>
 </template>
 
 <script lang="ts">
@@ -70,6 +72,7 @@ export default defineComponent({
   .hero-section h1 {
     font-size: 52px;
     margin-bottom: 8px;
+    color: white;
   }
 
   .hero-section article:nth-of-type(1) {
