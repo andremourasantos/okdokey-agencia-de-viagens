@@ -41,5 +41,6 @@ export default defineComponent({
 
   header h1 {
     font-family: var(--font-paragraph);
+    font-weight: bold;
   }
 </style>

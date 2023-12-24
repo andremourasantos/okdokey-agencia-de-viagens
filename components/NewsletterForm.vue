@@ -9,7 +9,7 @@
     </section>
     
     <section id="form">
-      <form @submit.prevent="subscribedToNewsletter">
+      <form @submit.prevent="subscribedToNewsletter($event)">
         <input type="email" name="email" id="email" placeholder="Seu endereço de e-mail" required>
         <Button :button-text="'Inscrever-me'" />
       </form>
@@ -29,8 +29,9 @@ export default defineComponent({
   components: {Button},
   setup () {
 
-    const subscribedToNewsletter = () => {
-      alert('Inscrito, com sucesso! (mensagem de exibição)')
+    const subscribedToNewsletter = (e:Event) => {
+      e.preventDefault();
+      alert('Inscrito, com sucesso! (mensagem de exibição)');
     }
 
     return {
@@ -63,7 +64,8 @@ export default defineComponent({
   
   div > section:nth-of-type(1) > div p strong {
     font-family: var(--font-title);
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: normal;
   }
 
   div > section:nth-of-type(1) > div p:nth-of-type(2) {

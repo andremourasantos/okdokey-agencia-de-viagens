@@ -24,6 +24,8 @@
     <Scorecards :scorecard-image="'airport'" :scorecard-title="'+5 países'" :scorecard-text="'Não se limite, viva o quanto for necessário!'" />
   </section>
 
+  <AboutUs/>
+
   <Footer/>
 </template>
 
