@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: true,
   app: {
+    baseURL: '/okdokey-agencia-de-viagens/',
+    buildAssetsDir: 'assets',
     head: {
       title: "OKDOKEY",
       link: [
