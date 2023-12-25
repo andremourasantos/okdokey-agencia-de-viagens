@@ -17,7 +17,7 @@
     </article>
   </section>
 
-  <section id="scorecards">
+  <section id="scorecards" class="secondary">
     <Scorecards :scorecard-image="'shaking'" :scorecard-title="'+15 mil seguidores'" :scorecard-text="'Anseiam por participar nos rolês!'" />
     <Scorecards :scorecard-image="'passion'" :scorecard-title="'+5 mil pessoas'" :scorecard-text="'Já experienciaram como é viver a vida!'" />
     <Scorecards :scorecard-image="'confetti'" :scorecard-title="'+100 rolês'" :scorecard-text="'Relizados, de todos os tipos e gostos!'" />
@@ -25,6 +25,10 @@
   </section>
 
   <AboutUs/>
+
+  <NextTrips/>
+
+  <FollowOnInstagram/>
 
   <Footer/>
 </template>
@@ -52,7 +56,7 @@ export default defineComponent({
     height: calc(100dvh - 80px);
     width: 100%;
     background-image: url('../assets/hero_photo_optz.jpg');
-    background-color: orange;
+    background-color: #BE7F46;
     background-size: cover;
     background-position: center;
     padding: 0px 40px;

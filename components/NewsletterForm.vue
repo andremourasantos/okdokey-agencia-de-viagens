@@ -1,14 +1,14 @@
 <template>
-  <div id="newsletter-card">
+  <div class="newsletter-card">
     <section>
       <img src="~/assets/ilustrations/mail-box.png" height="48" width="48">
       <div>
         <p><strong>Fique por dentro dos nossos rolês!</strong></p>
-        <p>Assine nossa newsletter e seja um dos primeiros a ser notificado de novas vagas!</p>
+        <p class="show-tablet-pc">Assine nossa newsletter e seja um dos primeiros a ser notificado de novas vagas!</p>
       </div>
     </section>
     
-    <section id="form">
+    <section class="form">
       <form @submit.prevent="subscribedToNewsletter($event)">
         <input type="email" name="email" id="email" placeholder="Seu endereço de e-mail" required>
         <Button :button-text="'Inscrever-me'" />
@@ -42,7 +42,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  #newsletter-card {
+  .newsletter-card {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -72,24 +72,30 @@ export default defineComponent({
     font-size: 14px;
   }
 
-  #form form {
+  .form form {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  #form form input {
+  .form form input {
     height: 42px;
     border-radius: 8px;
     padding: 8px;
     border: 2px solid #9747FF;
   }
 
-  #form form button {
+  .form form button {
     width: 100%;
     margin-bottom: 16px;
   }
-  #form > p {
+  .form > p {
     font-size: 12px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .show-tablet-pc {
+      display: none;
+    }
   }
 </style>

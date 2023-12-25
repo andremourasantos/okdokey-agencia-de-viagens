@@ -32,6 +32,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
 }
 
+h2 {
+  font-size: 42px;
+}
+
 a {
   color: inherit;
 }
@@ -43,4 +47,8 @@ svg.ph-icon-btn {
 
 svg.ph-icon-btn:active {
   transform: scale(0.95);
+}
+
+section.secondary {
+  background-color: #F5F5F5;
 }

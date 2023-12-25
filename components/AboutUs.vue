@@ -33,6 +33,7 @@ export default defineComponent({
     height: 100dvh;
     min-height: calc(fit-content + 80px);
     width: 100%;
+    background-color: #3F4C52;
     background-image: url('../assets/about-us-optz.jpg');
     background-size: cover;
     background-position: center;
