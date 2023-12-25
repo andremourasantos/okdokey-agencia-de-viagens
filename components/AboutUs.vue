@@ -31,7 +31,6 @@ export default defineComponent({
     display: flex;
     gap: 64px;
     height: 100dvh;
-    min-height: calc(fit-content + 80px);
     width: 100%;
     background-color: #3F4C52;
     background-image: url('../assets/about-us-optz.jpg');

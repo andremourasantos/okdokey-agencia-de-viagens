@@ -35,7 +35,6 @@ export default defineComponent({
     display: flex;
     gap: 64px;
     height: 100dvh;
-    min-height: calc(fit-content + 80px);
     width: 100%;
   }
 
