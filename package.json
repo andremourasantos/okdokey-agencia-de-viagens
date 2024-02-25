@@ -1,5 +1,7 @@
 {
-  "name": "nuxt-app",
+  "name": "okeydokey-agencia-de-viagens",
+  "version": "1.1.1",
+  "description": "Uma demonstração de site de agência de viagens fictícia, OKDOKEY, com personalidade forte, uma Hero Section chamativa e provas sociais diversas para apresentar a empresa.",
   "private": true,
   "type": "module",
   "scripts": {

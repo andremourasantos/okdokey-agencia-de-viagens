@@ -39,6 +39,7 @@ export default defineComponent({
     border: 8px solid var(--color-accent);
     backdrop-filter: blur(5px);
     margin: auto;
+    overflow: hidden;
   }
 
   #video::before {
@@ -71,6 +72,30 @@ export default defineComponent({
   #count span {
     font-family: var(--font-title);
     font-size: 40px;
+  }
+
+  div#count::before {
+    content: '';
+    height: 42px;
+    width: 42px;
+    /* background: red; */
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 21px -21px 0px var(--color-accent);
+    bottom: -42px;
+    right: 0;
+  }
+
+  div#count::after {
+    content: '';
+    height: 42px;
+    width: 42px;
+    /* background: red; */
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 21px -21px 0px var(--color-accent);
+    left: -42px;
+    top: 0;
   }
 
   #play-button {
